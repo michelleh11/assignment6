@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-top: 5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding-bottom: 0.2em;
+}
+
+h1{
+    font-family: 'Cormorant SC', serif;
+    font-weight: 700;
+    font-size:35px;
+}
+
+h3{
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section h1{
+    padding-bottom: 1em;
+}
+
+section .border{
+    margin: 3em 0;
+    border-top: 1px solid #213561;
+}
+
+/*---NAVIGATION---*/
+
+nav{
+    background-color: #213561;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 2em;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 4em;
+    margin-right: 8em;
+}
+
+.nav-links{
+    flex: 1;
+}
+
+.nav-links li{
+    display: flex;
+    margin: 0 2em;
+}
+
+nav li{
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav li a{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav li a:hover{
+    color: skyblue;
+}
+
+nav .logo{
+    flex: 5;
+}
+
+nav .logo a{
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 700;
+    font-size: large;
+}
+
+nav a, nav a:link{
+    color: white;
+}
+
+/*---HEADER---*/
+
+#header{
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('images/hero-image.png');
+    height: 33vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+
+#header h1{
+    font-size: 50px;
+}
+
+#header .hero-section{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .welcome{
+    width: 50%;
+}
+
+/*---PORTFOLIO---*/
+
+#portfolio{
+    padding-top: 5.5em;
+}
+
+.portfolio{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.one-of-three{
+    width: 30%;
+    justify-content: center;
+    background-image: url(images/art-picture.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    padding: 1em;
+    background-color: rgba(255,255,255,.5);
+    position: absolute;
+    top: 50px;
+    height: 40px;
+    width: 30%;
+    overflow: hidden;
+    -webkit-transition: all 1s ease-in-out .2s; /* broswer prefix-property:transition all properties will take 1sec
+    transition eases in and out, .2 seconds*/
+    -moz-transition: all 1s ease-in-out .2s;
+    -ms-transition: all 1s ease-in-out .2s;
+    -o-transition: all 1s ease-in-out .2s;
+}
+
+.overlay:hover{
+    height: 500px;
+    top: 0;
+}
+
+.overlay button{
+    padding: 1em;
+    border: 1px solid #213561;
+    margin: 1em 0;
+    background-color: white;
+}
+
+#portfolio .one-of-three h3{
+    padding-bottom: 0.5em;
+}
+
+#portfolio .attention{
+    color: skyblue;
+}
+
+/*---ABOUT---*/
+.about{
+    display: flex;
+}
+
+.text-box{
+    width: 80%;
+    flex-grow: 8;
+    order: 1;
+}
+
+.about-person{
+    width: 20%;
+    flex-grow: 5;
+    order: 0;
+    text-align: center;
+}
+
+.about-person i{
+    font-size: 4.5em;
+    color: #213561;
+}
+
+/*---CONTACT---*/
+#contact li{
+    display: block;
+}
+
+#contact{
+    margin-bottom: 3em;
+}
+
+/*---FOOTER---*/
+
+footer{
+    background-color: #213561;
+    bottom: 0;
+    padding: 2em;
+}
+
+footer .footer-links,.social-links, .nav-links{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: end;
+}
+
+footer .footer-links{
+    width: 100%;
+}
+
+footer a{
+    color: white;
+}
