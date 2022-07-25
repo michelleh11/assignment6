@@ -149,7 +149,6 @@ nav a, nav a:link{
     color: black;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .one-of-three{
@@ -159,6 +158,7 @@ nav a, nav a:link{
     height: 500px;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .overlay{
