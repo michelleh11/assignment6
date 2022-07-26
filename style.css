@@ -167,7 +167,6 @@ nav a, nav a:link{
     position: absolute;
     top: 50px;
     height: 40px;
-    width: 30%;
     overflow: hidden;
     -webkit-transition: all 1s ease-in-out .2s; /* broswer prefix-property:transition all properties will take 1sec
     transition eases in and out, .2 seconds*/
